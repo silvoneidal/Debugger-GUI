@@ -115,7 +115,7 @@ Begin VB.Form Main
          Top             =   2880
          Width           =   1095
       End
-      Begin VB.TextBox txtVariable 
+      Begin VB.TextBox txtDebugger 
          BeginProperty Font 
             Name            =   "Courier New"
             Size            =   9
