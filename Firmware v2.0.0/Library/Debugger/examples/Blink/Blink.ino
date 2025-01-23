@@ -19,19 +19,23 @@ void setup() {
         ; // aguarda conexão serial
   }
     
-  pinMode(13, OUTPUT);
+  pinMode(13, OUTPUT);  
+  Debugger(1, "PASS");
   
 }
 
 void loop() {
     digitalWrite(13, HIGH);
-    Debugger(1, 1);
+    Debugger(2, 1);
     delay(500);
+	  Debugger(1, "BREAK");
 
     digitalWrite(13, LOW);
-    Debugger(1, 0);
+    Debugger(2, 0);
     delay(500);
+	  Debugger(2, "BREAK");
     
-    Debugger(2, millis());
+    Debugger(3, millis());
+	  Debugger(3, "BREAK");
 
 }

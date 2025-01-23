@@ -3,21 +3,21 @@ Object = "{648A5603-2C6E-101B-82B6-000000000014}#1.1#0"; "MSCOMM32.OCX"
 Object = "{831FDD16-0C5C-11D2-A9FC-0000F8754DA1}#2.0#0"; "MSCOMCTL.OCX"
 Begin VB.Form Main 
    BorderStyle     =   1  'Fixed Single
-   ClientHeight    =   5025
+   ClientHeight    =   4920
    ClientLeft      =   1350
    ClientTop       =   2970
    ClientWidth     =   6270
    Icon            =   "Main.frx":0000
    LinkTopic       =   "Form1"
    MaxButton       =   0   'False
-   ScaleHeight     =   5025
+   ScaleHeight     =   4920
    ScaleWidth      =   6270
    StartUpPosition =   2  'CenterScreen
    Begin MSComctlLib.ProgressBar pgbBuffer 
       Height          =   345
       Left            =   120
-      TabIndex        =   21
-      Top             =   4440
+      TabIndex        =   20
+      Top             =   4320
       Width           =   2295
       _ExtentX        =   4048
       _ExtentY        =   609
@@ -39,8 +39,8 @@ Begin VB.Form Main
       EndProperty
       Height          =   350
       Left            =   3720
-      TabIndex        =   18
-      Top             =   4440
+      TabIndex        =   17
+      Top             =   4320
       Width           =   1095
    End
    Begin VB.CommandButton cmdReset 
@@ -56,8 +56,8 @@ Begin VB.Form Main
       EndProperty
       Height          =   350
       Left            =   4920
-      TabIndex        =   17
-      Top             =   4440
+      TabIndex        =   16
+      Top             =   4320
       Width           =   1095
    End
    Begin VB.Timer Timer1 
@@ -79,7 +79,7 @@ Begin VB.Form Main
       Height          =   3375
       Left            =   120
       TabIndex        =   12
-      Top             =   960
+      Top             =   840
       Width           =   6015
       Begin VB.CommandButton cmdBreak 
          BeginProperty Font 
@@ -92,9 +92,9 @@ Begin VB.Form Main
             Strikethrough   =   0   'False
          EndProperty
          Height          =   350
-         Left            =   2400
+         Left            =   4800
          Style           =   1  'Graphical
-         TabIndex        =   22
+         TabIndex        =   21
          Top             =   2880
          Width           =   1095
       End
@@ -111,7 +111,7 @@ Begin VB.Form Main
          EndProperty
          Height          =   350
          Left            =   3600
-         TabIndex        =   19
+         TabIndex        =   18
          Top             =   2880
          Width           =   1095
       End
@@ -127,14 +127,14 @@ Begin VB.Form Main
          EndProperty
          Height          =   350
          Left            =   120
-         TabIndex        =   16
+         TabIndex        =   15
          Top             =   2880
-         Width           =   2175
+         Width           =   3375
       End
       Begin MSComctlLib.ListView lstDebugger 
          Height          =   2535
          Left            =   120
-         TabIndex        =   14
+         TabIndex        =   13
          Top             =   240
          Width           =   5775
          _ExtentX        =   10186
@@ -148,29 +148,12 @@ Begin VB.Form Main
          Appearance      =   1
          NumItems        =   0
       End
-      Begin VB.CommandButton cmdClearList 
-         Caption         =   "Limpar"
-         BeginProperty Font 
-            Name            =   "Courier New"
-            Size            =   9
-            Charset         =   0
-            Weight          =   400
-            Underline       =   0   'False
-            Italic          =   0   'False
-            Strikethrough   =   0   'False
-         EndProperty
-         Height          =   350
-         Left            =   4800
-         TabIndex        =   13
-         Top             =   2880
-         Width           =   1095
-      End
    End
    Begin VB.Frame frmConnect 
       Height          =   735
       Left            =   120
       TabIndex        =   7
-      Top             =   120
+      Top             =   0
       Width           =   6015
       Begin VB.CommandButton cmdScanPort 
          Caption         =   "Scanear"
@@ -255,13 +238,13 @@ Begin VB.Form Main
       Height          =   3375
       Left            =   120
       TabIndex        =   0
-      Top             =   960
+      Top             =   840
       Width           =   6015
       Begin VB.CommandButton cmdSendData 
          Caption         =   "Enviar"
          BeginProperty Font 
             Name            =   "Courier New"
-            Size            =   8.25
+            Size            =   9
             Charset         =   0
             Weight          =   400
             Underline       =   0   'False
@@ -269,10 +252,10 @@ Begin VB.Form Main
             Strikethrough   =   0   'False
          EndProperty
          Height          =   350
-         Left            =   3120
+         Left            =   3600
          TabIndex        =   6
          Top             =   2880
-         Width           =   1335
+         Width           =   1095
       End
       Begin VB.ComboBox cboSendData 
          BeginProperty Font 
@@ -288,7 +271,7 @@ Begin VB.Form Main
          Left            =   120
          TabIndex        =   5
          Top             =   2880
-         Width           =   2775
+         Width           =   3375
       End
       Begin VB.CommandButton cmdClearTerminal 
          Caption         =   "Limpar"
@@ -302,10 +285,10 @@ Begin VB.Form Main
             Strikethrough   =   0   'False
          EndProperty
          Height          =   350
-         Left            =   4560
+         Left            =   4800
          TabIndex        =   2
          Top             =   2880
-         Width           =   1335
+         Width           =   1095
       End
       Begin VB.TextBox txtTerminal 
          BeginProperty Font 
@@ -347,7 +330,7 @@ Begin VB.Form Main
       EndProperty
       Height          =   330
       Left            =   120
-      TabIndex        =   15
+      TabIndex        =   14
       Top             =   4440
       Width           =   2295
    End
@@ -367,10 +350,10 @@ Begin VB.Form Main
          Strikethrough   =   0   'False
       EndProperty
       ForeColor       =   &H00FFFFFF&
-      Height          =   350
+      Height          =   345
       Left            =   2520
-      TabIndex        =   20
-      Top             =   4440
+      TabIndex        =   19
+      Top             =   4320
       Width           =   1095
    End
    Begin VB.Shape shpConnect 
@@ -379,7 +362,7 @@ Begin VB.Form Main
       BorderStyle     =   0  'Transparent
       Height          =   135
       Left            =   -120
-      Top             =   4920
+      Top             =   4800
       Width           =   6495
    End
    Begin VB.Label lblData 
@@ -438,7 +421,6 @@ Private Declare Sub Sleep Lib "kernel32.dll" (ByVal dwMilliseconds As Long)
 
 Dim Titulo As String
 Dim Index As Integer
-Dim newIndex As Integer
 Dim Value As String
 
 Private Sub Form_Load()
@@ -454,7 +436,7 @@ On Error GoTo Erro
     ' Adiciona colunas ao listview
     With lstDebugger
         .ColumnHeaders.Add , , "Index", 600 ' Cabeçalho da coluna
-        .ColumnHeaders.Add , , "Variável", 1600 ' Cabeçalho da coluna
+        .ColumnHeaders.Add , , "Debugger", 1600 ' Cabeçalho da coluna
         .ColumnHeaders.Add , , "Valor", 2700 ' Cabeçalho da coluna
         .ColumnHeaders.Add , , "Time", 1000 ' Cabeçalho da coluna
     End With
@@ -463,7 +445,7 @@ On Error GoTo Erro
     lstDebugger.SelectedItem = Nothing
     
     ' Informações ao usuário
-    lstDebugger.ToolTipText = "Selecione um index para editar a variável."
+    lstDebugger.ToolTipText = "Selecione um index para editar o debugger."
         
     ' Adiciona lista de baudrate
     With cboBaudRate
@@ -532,7 +514,7 @@ On Error GoTo Erro
         MSComm1.CommPort = Mid(cboCommPort.Text, 4, 2)
         MSComm1.Settings = cboBaudRate.Text & "n,8,1"
         MSComm1.RThreshold = 1
-        MSComm1.DTREnable = False
+        MSComm1.DTREnable = True
         MSComm1.RTSEnable = True
         MSComm1.PortOpen = True
         cboCommPort.Enabled = False
@@ -551,6 +533,11 @@ On Error GoTo Erro
         cmdSendData.Enabled = False
         shpConnect.BackColor = vbRed
         Me.Caption = Titulo
+        lstDebugger.ListItems.Clear
+        ' ------------------------------
+        txtTerminal.Text = Empty
+        cmdBreak.Caption = Empty
+        cmdBreak.BackColor = &H8000000F
     End If
     
     
@@ -637,21 +624,30 @@ Private Function UpdateDebugger(Data As String)
         CurrentTime = Time
         
         ' Verifica se Index atual existe
-        For i = 0 To Index
-            If Index = i Then
-                ' Atualiza index atual
-                lstDebugger.ListItems(Index).SubItems(2) = Value
-                lstDebugger.ListItems(Index).SubItems(3) = CurrentTime
-            ElseIf Index > newIndex Then
-                ' Adiciona novo index, variável, valor
-                newIndex = newIndex + 1
-                With lstDebugger
-                    .ListItems.Add , , newIndex
-                    .ListItems(.ListItems.Count).SubItems(1) = "Variável_" & newIndex
-                    .ListItems(.ListItems.Count).SubItems(2) = Value
-                End With
+        Dim itemExists As Boolean
+        Dim i As Integer
+        For i = 1 To lstDebugger.ListItems.Count
+            If lstDebugger.ListItems(i).Text = Index Then
+                itemExists = True
+                Exit For
             End If
         Next i
+        
+        If Not itemExists Then
+            ' Adiciona novo index
+            With lstDebugger
+                .ListItems.Add , , Index
+                .ListItems(.ListItems.Count).SubItems(1) = "Debugger"
+                .ListItems(.ListItems.Count).SubItems(2) = Value
+                .ListItems(.ListItems.Count).SubItems(3) = CurrentTime
+            End With
+        Else
+            ' Atualiza index atual
+            With lstDebugger
+                .ListItems(Index).SubItems(2) = Value
+                .ListItems(Index).SubItems(3) = CurrentTime
+            End With
+        End If
     End If
     
 End Function
@@ -708,12 +704,15 @@ End Sub
 
 Private Sub cmdReset_Click()
     ' Efetua um reset de hardware
-    MSComm1.DTREnable = True
-    Sleep (250)
     MSComm1.DTREnable = False
+    Sleep (250)
+    MSComm1.DTREnable = True
     
     cmdBreak.Caption = Empty
     cmdBreak.BackColor = &H8000000F
+    
+    lstDebugger.ListItems.Clear
+    txtTerminal.Text = Empty
     
 End Sub
 
@@ -740,8 +739,8 @@ Private Sub cmdEditarVariable_Click()
     Dim item As ListItem
     Set item = lstDebugger.SelectedItem
     
-    If txtVariable.Text = Empty Then
-        MsgBox "Digite um nome para editar a variável.", vbInformation, "DALCOQUIO AUTOMAÇÃO"
+    If txtDebugger.Text = Empty Then
+        MsgBox "Digite um nome para editar a debugger.", vbInformation, "DALCOQUIO AUTOMAÇÃO"
         lstDebugger.SelectedItem = Nothing
         Exit Sub
     End If
@@ -749,21 +748,15 @@ Private Sub cmdEditarVariable_Click()
     ' Verifica se algum index foi selecionado
     If Not item Is Nothing Then
         ' Alterar variavel do index selecionado
-        item.SubItems(1) = txtVariable.Text
+        item.SubItems(1) = txtDebugger.Text
         lstDebugger.SelectedItem = Nothing
-        txtVariable.Text = Empty
+        txtDebugger.Text = Empty
     Else
         MsgBox "Nenhum index selecionado.", vbInformation, "DALCOQUIO AUTOMAÇÃO"
     End If
     
     lstDebugger.SelectedItem = Nothing
 
-End Sub
-
-Private Sub cmdClearList_Click()
-    lstDebugger.ListItems.Clear
-    newIndex = 0
-    
 End Sub
 
 Private Sub mTerminal_Click()
